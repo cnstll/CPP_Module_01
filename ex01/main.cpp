@@ -6,7 +6,7 @@
 /*   By: calle <calle@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/16 15:51:13 by calle             #+#    #+#             */
-/*   Updated: 2021/09/16 17:00:41 by calle            ###   ########.fr       */
+/*   Updated: 2021/09/22 18:46:25 by calle            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	zombieRiseUp(int numOfZombies, std::string name)
 	std::cout << "Rise up Horde!!!" << std::endl;
 	std::cout << "*** " <<  numOfZombies;
 	std::cout << " zombies named " << name; 
-	std::cout << " get out of the ground ***" << std::endl;
+	std::cout << " are getting out of the ground ***" << std::endl;
 }
 
 int main ( void )
