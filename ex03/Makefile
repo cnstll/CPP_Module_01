@@ -17,12 +17,15 @@ UNAME_S := $(shell uname -s)
 
 CFLAGS = -Wall -Wextra -Werror
 
+DEBUG_FLAGS = -g
+
 .PHONY: all clean fclean re
 
 all : $(NAME)
 
 $(NAME) : $(OBJS)
 	$(CC) $(CFLAGS) -o $(NAME) $(OBJS)
+
 
 %.o: %.cpp
 	$(CC) $(CFLAGS) -o $@ -c $^ 

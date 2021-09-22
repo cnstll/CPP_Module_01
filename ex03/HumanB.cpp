@@ -9,9 +9,9 @@ HumanB::~HumanB (){};
 
 void	HumanB::attack( void )
 {
-	std::cout << this->getName() << " attacks with his ";
-	if (this->_weapon->getType() == "") 
-		std::cout << "bare hands -- no weapon equiped" << std::endl;
+	std::cout << this->getName() << " attacks with ";
+	if (!this->_weapon) 
+		std::cout << "his bare hands -- no weapon equiped" << std::endl;
 	else
 		std::cout << this->_weapon->getType() << std::endl;
 }
@@ -21,7 +21,7 @@ void HumanB::_setName( std::string name )
 	this->_name = name;
 }
 
-void HumanB::setWeapon( Weapon weapon)
+void HumanB::setWeapon( Weapon &weapon)
 {
 	this->_weapon = &weapon;
 }

@@ -8,7 +8,7 @@
 class HumanA {
 
 	public:
-		HumanA( std::string name, Weapon weapon );
+		HumanA( std::string name, Weapon &weapon );
 		~HumanA();
 
 		void	attack( void );
@@ -18,7 +18,7 @@ class HumanA {
 
 	private:
 		std::string _name;
-		Weapon _weapon;
+		Weapon &_weapon;
 
 		void _setName( std::string const name );
 };

@@ -1,9 +1,8 @@
 #ifndef HUMANB_HPP
 #define HUMANB_HPP
-
-#include <string>
-#include <iostream>
 #include "Weapon.hpp"
+#include <iostream>
+#include <string>
 
 class HumanB {
 	public:
@@ -13,7 +12,7 @@ class HumanB {
 		void	attack( void );
 
 		std::string	getName( void );
-		void	setWeapon( Weapon weapon );
+		void	setWeapon( Weapon & weapon );
 
 
 	private:
