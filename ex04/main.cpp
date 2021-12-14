@@ -6,7 +6,7 @@
 /*   By: calle <calle@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/22 20:44:07 by calle             #+#    #+#             */
-/*   Updated: 2021/09/22 20:44:28 by calle            ###   ########.fr       */
+/*   Updated: 2021/12/14 13:05:22 by calle            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,9 +41,9 @@ bool	check_arguments(char **args_to_check)
 
 void	replace(char *filename, std::string s1, std::string s2)
 {
-	std::string	outputFilename = ((std::string) filename).append(".replace");
+	std::string	outputFilename = ((std::string)filename).append(".replace");
 	std::ifstream fileInput(filename);
-	std::ofstream fileOutput(outputFilename);
+	std::ofstream fileOutput(&outputFilename[0]);
 	std::string	line;
 
 	size_t	s1Len = s1.length();
